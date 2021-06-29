@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "bold";
+  src: url("../asset/fonts/hindsiliguri-bold-webfont.woff2") format("woff2"), url("../asset/fonts/hindsiliguri-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "medium";
+  src: url("../asset/fonts/hindsiliguri-medium-webfont.woff2") format("woff2"), url("../asset/fonts/hindsiliguri-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../asset/fonts/hindsiliguri-regular-webfont.woff2") format("woff2"), url("../asset/fonts/hindsiliguri-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../asset/fonts/hindsiliguri-light-webfont.woff2") format("woff2"), url("../asset/fonts/hindsiliguri-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+*::-moz-selection {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+*::selection {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+img::-moz-selection {
+  background: none;
+}
+
+img::selection {
+  background: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+body {
+  background: #0f0b1a;
+}
+
+html {
+  -ms-overflow-style: none;
+  font-family: regular;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.heading-1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.heading-2 {
+  font-size: 2.5rem;
+}
+
+.heading-3 {
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 5%;
+  height: 10vh;
+  z-index: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+}
+
+header .logo {
+  font-family: light;
+}
+
+header svg {
+  width: 2rem;
+}
+
+.main-landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main-landing .page-navigation {
+  position: absolute;
+  bottom: 30%;
+  right: 15%;
+  width: 13rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-landing .page-navigation .prev-wraper,
+.main-landing .page-navigation .next-wraper {
+  border: 0.09rem solid #fff;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-landing .page-navigation svg {
+  width: 0.5rem;
+}
+
+.main-landing .page-navigation svg line {
+  stroke-width: 0.13rem;
+}
+
+.main-landing #page-2 {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.main-landing .page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main-landing .page::-moz-selection {
+  background: none;
+}
+
+.main-landing .page::selection {
+  background: none;
+}
+
+.main-landing .page .wrapper {
+  overflow: hidden;
+  right: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 11, 26, 0.5);
+}
+
+.main-landing .page .wrapper::-moz-selection {
+  background: none;
+}
+
+.main-landing .page .wrapper::selection {
+  background: none;
+}
+
+.main-landing .page .wrapper img {
+  -webkit-animation: back-anim 20s infinite alternate;
+          animation: back-anim 20s infinite alternate;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  position: absolute;
+}
+
+.main-landing .page .wrapper img::-moz-selection {
+  background: none;
+}
+
+.main-landing .page .wrapper img::selection {
+  background: none;
+}
+
+.main-landing .page .wrapper .about-btn {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.main-landing .page .wrapper .about-btn a {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: light;
+  position: relative;
+  letter-spacing: 0.1rem;
+}
+
+.main-landing .page .wrapper .about-btn a::before {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 3rem;
+  background: #fff;
+  position: absolute;
+  left: 120%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-landing .page .wrapper .about-btn a:hover::before {
+  width: 6rem;
+}
+
+.main-landing .page .wrapper .details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.main-landing .page .wrapper .details h1 {
+  font-family: medium;
+  letter-spacing: 0.3rem;
+  line-height: 4rem;
+  font-size: 3rem;
+}
+
+.main-landing .page .wrapper .details p {
+  padding-top: 1rem;
+  font-family: light;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  bottom: 0;
+}
+
+footer .pages-indicator {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+}
+
+footer .pages-indicator .prev-number {
+  font-family: light;
+}
+
+footer .pages-indicator .line-page {
+  height: 0.1rem;
+  width: 50%;
+  background: #fff;
+}
+
+footer .pages-indicator .next-number {
+  font-family: light;
+}
+
+footer .socials {
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .socials li a {
+  font-family: light;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.works {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  background: #0f0b1a;
+  padding: 20rem;
+}
+
+@-webkit-keyframes back-anim {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes back-anim {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  html {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 7px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

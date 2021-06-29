@@ -1,0 +1,46 @@
+// start-reset
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+*::selection {
+	background: rgba($color: $indo, $alpha: 0.5);
+}
+img::selection {
+	background: none;
+}
+::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
+}
+body {
+	background: $singapore;
+}
+html {
+	-ms-overflow-style: none;
+	font-family: regular;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+// end-reset

@@ -1,0 +1,18 @@
+// start-header
+header {
+	display: flex;
+	width: 100%;
+	padding: 0 5%;
+	height: 10vh;
+	z-index: 2;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	.logo {
+		font-family: light;
+	}
+	svg {
+		width: 2rem;
+	}
+}
+// end-header

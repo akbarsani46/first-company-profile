@@ -1,0 +1,34 @@
+// start-var
+$indo: #fff;
+$malay: #132e25;
+$singapore: #0f0b1a;
+$murica: #60032b;
+@font-face {
+	font-family: "bold";
+	src: url("../asset/fonts/hindsiliguri-bold-webfont.woff2") format("woff2"),
+		url("../asset/fonts/hindsiliguri-bold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "medium";
+	src: url("../asset/fonts/hindsiliguri-medium-webfont.woff2") format("woff2"),
+		url("../asset/fonts/hindsiliguri-medium-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "regular";
+	src: url("../asset/fonts/hindsiliguri-regular-webfont.woff2") format("woff2"),
+		url("../asset/fonts/hindsiliguri-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "light";
+	src: url("../asset/fonts/hindsiliguri-light-webfont.woff2") format("woff2"),
+		url("../asset/fonts/hindsiliguri-light-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+// end-var
